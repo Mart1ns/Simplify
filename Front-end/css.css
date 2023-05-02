@@ -1,0 +1,156 @@
+:root{
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: #9999fc;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+header{
+    background-color: #3cd6a2;
+    padding: 2rem 6rem;
+    border-bottom: #324561 solid 10px;
+    display: flex;
+    animation: header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    
+}
+
+@keyframes header{
+    50%{
+        border-bottom: #3cd6a2 solid 10px;
+    }
+    100%{
+        border-bottom: #9999fc solid 10px;
+    }
+}
+
+header h1{
+    color: whitesmoke   ;
+    font-size: 40px;
+    
+    
+}
+
+header img{
+    width: 70px;
+    margin-left: 5px;
+    
+}
+
+
+#logo{
+    font-weight: 900;
+    font-family:  'Atkinson Hyperlegible', sans-serif;
+    font-size: 50px;
+}
+
+/* Estilização dos icons*/
+
+#balance{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+
+}
+
+#balance h2{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h2{
+    margin-top: 3.2rem;
+    color: whitesmoke;
+    font-weight: 400;
+    font-family:  'Atkinson Hyperlegible', sans-serif;
+}
+
+.card{
+    background-color: #3cd6a2;
+    border: 2px solid whitesmoke;
+    color: rgb(34,34,34);
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.card.total{
+    background-color: whitesmoke;
+    border: 2px solid #3cd6a2;
+}
+.card h3{
+    font-size: 1rem;
+    color: #324561;
+}
+
+.card p{
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+#data-table{
+    width: 100%;
+    border-spacing: 1rem 0.5rem;
+}
+
+table th{
+    background-color: whitesmoke;
+    border: 2px solid #3cd6a2;
+    opacity: 0 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    animation: th;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes th {
+    
+}
+
+table td{
+    background-color: #3cd6a2;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    
+    
+    
+}
+
+table td:hover{
+    background-color:whitesmoke;
+    color: #324561;
+    font-weight: 900;
+    border: 1px solid #3cd6a2;
+   
+    
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
