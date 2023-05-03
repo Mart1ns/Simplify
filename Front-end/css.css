@@ -69,6 +69,18 @@ header img{
 
 }
 
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 #balance h2{
     margin-top: 0;
     margin-bottom: 1rem;
@@ -79,6 +91,20 @@ h2{
     color: whitesmoke;
     font-weight: 400;
     font-family:  'Atkinson Hyperlegible', sans-serif;
+}
+
+a{
+    color: #324561;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#3cd6a2;
+}
+
+.button.new{
+    display: inline-block;
+    margin-bottom: .9rem;
 }
 
 .card{
@@ -97,18 +123,26 @@ h2{
 .card h3{
     font-size: 1rem;
     color: #324561;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p{
-    font-weight: 500;
+    font-weight: 900;
     line-height: 2rem;
     margin-top: 1rem;
 }
 
+
+
 #data-table{
     width: 100%;
     border-spacing: 1rem 0.5rem;
+    background-color: #3cd6a2;
+    border-radius: 20px;
 }
+
 
 table th{
     background-color: whitesmoke;
@@ -122,14 +156,16 @@ table th{
     animation-direction: alternate-reverse;
 }
 
+
+
+
 @keyframes th {
     
 }
 
 table td{
     background-color: #3cd6a2;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
+    
     text-align: center;
     
     
@@ -137,7 +173,9 @@ table td{
 }
 
 table td:hover{
-    background-color:whitesmoke;
+    
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
     color: #324561;
     font-weight: 900;
     border: 1px solid #3cd6a2;
@@ -145,12 +183,4 @@ table td:hover{
     
 }
 
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
 
