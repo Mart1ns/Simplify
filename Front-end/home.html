@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paulo Eduardo Martins">
 
-    <link rel="stylesheet" href="/assets/style/css_home.css">
+    <link rel="stylesheet" href="/css.css">
     <link rel="icon" href="https://img.icons8.com/matisse/100/null/experimental-wallet-matisse.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Figtree:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Figtree:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
 
 
     <title>Simplify</title>
@@ -31,30 +33,30 @@
         <h1 id="logo">Simplify</h1><img src="https://img.icons8.com/parakeet/96/null/money.png"">
     </header>
 
-    <main class="container">
+    <main class=" container">
         <section id="balance">
             <h2 class="sr-only">Balanços</h2>
             <div class="card">
                 <h3>
-                <span>Entradas</span>
-                <img src="https://img.icons8.com/parakeet/48/null/economic-improvement.png" alt="">
+                    <span>Entradas</span>
+                    <img src="https://img.icons8.com/parakeet/48/null/economic-improvement.png" alt="">
                 </h3>
                 <p>R$ 5000,00</p>
             </div>
 
             <div class="card">
                 <h3>
-                <span>
-                    Saídas
-                </span>
-                <img src="https://img.icons8.com/parakeet/48/null/coins--v2.png" alt="">
+                    <span>
+                        Saídas
+                    </span>
+                    <img src="https://img.icons8.com/parakeet/48/null/coins--v2.png" alt="">
                 </h3>
                 <p>R$ 2000,00</p>
             </div>
 
             <div class="card total">
                 <h3>
-                    
+
                     <span>
                         Total
                     </span>
@@ -67,7 +69,9 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
         </section>
-        <a href="#" class="button new">+ Nova transação</a>
+
+
+        <a href="#"  onclick="Modal.open()" class="button new">+ Nova transação</a>
         <Table id="data-table">
             <!--Cabeçalho de tablea-->
             <THead>
@@ -75,7 +79,7 @@
                     <th>Descrição</th>
                     <th>Valor</th>
                     <th>Data</th>
-            
+
                 </tr>
             </THead>
             <tbody>
@@ -89,7 +93,7 @@
                     <td>Aniversário da minha namorada</td>
                     <td>- R$ 800,00</td>
                     <td>04/04/2023</td>
-                     <td><img src="https://img.icons8.com/parakeet/30/null/close-window.png" alt=""></td>
+                    <td><img src="https://img.icons8.com/parakeet/30/null/close-window.png" alt=""></td>
 
                 </tr>
                 <tr>
@@ -100,13 +104,63 @@
                 </tr>
             </tbody>
         </Table>
-    </main>
+        </main>
 
-    
+        <div class="modal-overlay">
+            <div class="modal">
+                <div id="form">
+                    <h2>Nova transação</h2>
+                    <form action="">
+                        <div class="input-group">
+                            <label 
+                            class="sr-only" 
+                            for="amount">Descrição</label>
+                            <input type="text" id="amount" name="amount" placeholder="Descrição" />
+                        </div>
+                        <div class="input-group">
+                            <label 
+                            class="sr-only" 
+                            for="amount">Descrição</label>
+                            <input type="number" step="0.01" id="amount" name="amount" placeholder="0.00" />
+                            <small class="help">Use o sinal "-" para indicar despesas e vírgula para casas decimais!!</small>
+                        </div>
+                        <div class="input-group">
+                            <label 
+                            class="sr-only" 
+                            for="amount">Descrição</label>
+                            <input type="date" step="0.01" id="date" name="date" placeholder="Data" />
+                     
+                         <div class="input-group actions">
+                             <a href="#" onclick="Modal.close()"  class="button cancel">Cancelar</a>
+                             <button>Salvar</button>
+                         </div>   
 
-    <footer>
-        <p>Simplify</p>
-    </footer>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Simplify</p>
+        </footer>
+
+        <script>
+            Modal = {
+            open(){
+               
+                document.querySelector(".modal-overlay")
+                .classList
+                .add("active")
+            },
+            close(){
+                document.querySelector(".modal-overlay")
+                .classList
+                .remove("active")
+            }
+        }
+
+        </script>
 </body>
 
 </html>
