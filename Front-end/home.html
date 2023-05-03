@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paulo Eduardo Martins">
 
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="/assets/style/css_home.css">
     <link rel="icon" href="https://img.icons8.com/matisse/100/null/experimental-wallet-matisse.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Figtree:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Figtree:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
 
     <title>Simplify</title>
@@ -24,33 +24,50 @@
 <body>
 
     <header>
-        <!--<img src="https://img.icons8.com/parakeet/96/null/money.png"/>-->
-        <h1 id="logo">Simplify</h1><img src="https://img.icons8.com/plasticine/100/null/money.png"">
+        <!--<img src="https://img.icons8.com/parakeet/96/null/money.png"/>
+            https://img.icons8.com/plasticine/100/null/money.png
+        
+        -->
+        <h1 id="logo">Simplify</h1><img src="https://img.icons8.com/parakeet/96/null/money.png"">
     </header>
 
     <main class="container">
         <section id="balance">
-            <h2>Balanços</h2>
+            <h2 class="sr-only">Balanços</h2>
             <div class="card">
-                <h3>Entradas</h3>
+                <h3>
+                <span>Entradas</span>
+                <img src="https://img.icons8.com/parakeet/48/null/economic-improvement.png" alt="">
+                </h3>
                 <p>R$ 5000,00</p>
             </div>
 
             <div class="card">
-                <h3>Saídas</h3>
+                <h3>
+                <span>
+                    Saídas
+                </span>
+                <img src="https://img.icons8.com/parakeet/48/null/coins--v2.png" alt="">
+                </h3>
                 <p>R$ 2000,00</p>
             </div>
 
             <div class="card total">
-                <h3>Total</h3>
+                <h3>
+                    
+                    <span>
+                        Total
+                    </span>
+                    <img src="https://img.icons8.com/parakeet/48/null/money-box.png" alt="">
+                </h3>
                 <p>R$ 3000,00</p>
             </div>
 
         </section>
         <section id="transaction">
-            <h2>Transações</h2>
+            <h2 class="sr-only">Transações</h2>
         </section>
-
+        <a href="#" class="button new">+ Nova transação</a>
         <Table id="data-table">
             <!--Cabeçalho de tablea-->
             <THead>
@@ -58,6 +75,7 @@
                     <th>Descrição</th>
                     <th>Valor</th>
                     <th>Data</th>
+            
                 </tr>
             </THead>
             <tbody>
@@ -65,21 +83,26 @@
                     <td>Luz</td>
                     <td>- R$ 500,00</td>
                     <td>21/04/2023</td>
+                    <td><img src="https://img.icons8.com/parakeet/30/null/close-window.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Aniversário da minha namorada</td>
                     <td>- R$ 800,00</td>
                     <td>04/04/2023</td>
+                     <td><img src="https://img.icons8.com/parakeet/30/null/close-window.png" alt=""></td>
 
                 </tr>
                 <tr>
                     <td>Dia das mães</td>
                     <td>- R$ 400,00</td>
                     <td>21/04/2023</td>
+                    <td><img src="https://img.icons8.com/parakeet/30/null/close-window.png" alt=""></td>
                 </tr>
             </tbody>
         </Table>
     </main>
+
+    
 
     <footer>
         <p>Simplify</p>
